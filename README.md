@@ -7,7 +7,7 @@ https://docs.docker.com/engine/reference/run/
 # Install Docker with script
 
 ```bash
-sudo chmod +x installDocker.sh && ./installDocker.sh
+sudo chmod +x install.sh && ./install.sh
 ```
 
 # Command from project

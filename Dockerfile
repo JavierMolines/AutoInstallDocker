@@ -2,9 +2,11 @@ FROM ubuntu
 
 WORKDIR /application
 
-COPY ./installDocker.sh ./
+ENV PROYECT=install.sh
 
-RUN chmod +x installDocker.sh
-RUN ./installDocker.sh
+COPY ./${PROYECT} ./
+
+RUN chmod +x ${PROYECT}
+RUN ./${PROYECT}
 
 EXPOSE 3000
